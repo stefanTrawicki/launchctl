@@ -1,5 +1,8 @@
 # shiny-octo-spork
 Some launchctl jobs
 
-## com.stefan.vault
-commits my obsidian vault changes
+### com.stefan.watchvault
+listens to vault for changes and adds them
+
+### com.stefan.storevault
+commits obisidan vault changes at an interval
