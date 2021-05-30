@@ -1,4 +1,3 @@
-# shiny-octo-spork
 Some launchctl jobs
 
 ### com.stefan.watchvault
