@@ -3,22 +3,23 @@
 <plist version="1.0">
 <dict>
         <key>Label</key>
-        <string>com.stefan.vault</string>
+        <string>com.stefan.storevault</string>
         <key>ProgramArguments</key>
         <array>
                 <string>bash</string>
                 <string>-c</string>
-                <string>cd ~/Documents/Research\ Vault;git add *;git status;git commit -a -m "$(date +"%D %T")";git push origin master</string>
+                <string>cd ~/Documents/Research\ Vault;git status;git commit -a -m "$(date +"%D %T")";git push origin master</string>
         </array>
         <key>WorkingDirectory</key>
         <string>/Users/stefan/Library/LaunchAgents</string>
-        <key>WatchPaths</key>
-        <array>
-                <string>/Users/stefan/Documents/Research Vault</string>
-        </array>
+        <key>StartCalendarInterval</key>
+        <dict>
+                <key>Hour</key>
+                <integer>12</integer>
+        </dict>
         <key>StandardOutPath</key>
-        <string>/Users/stefan/Library/LaunchAgents/out.log</string>
+        <string>/Users/stefan/Library/LaunchAgents/com.stefan.storevault.out.log</string>
         <key>StandardErrorPath</key>
-        <string>/Users/stefan/Library/LaunchAgents/error.log</string>
+        <string>/Users/stefan/Library/LaunchAgents/com.stefan.storevault.error.log</string>
 </dict>
 </plist>
